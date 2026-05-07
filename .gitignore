@@ -1,0 +1,33 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+env/
+
+# Jupyter/Colab checkpoints
+.ipynb_checkpoints/
+
+# Dataset (VERY IMPORTANT - do NOT push large data)
+data/
+
+# Trained model (optional - recommended if large)
+model.h5
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Streamlit cache
+.streamlit/
+
+# TensorFlow / Keras cache
+.keras/
+
+# IDE settings
+.vscode/
