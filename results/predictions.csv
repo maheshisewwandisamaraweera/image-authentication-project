@@ -1,0 +1,568 @@
+Image Name,Actual Class,Prediction,Confidence
+A001-010.png,Actual,Actual,69.27
+A003-032.png,Actual,Actual,64.87
+A005-023.png,Actual,Actual,59.97
+A008-229.png,Actual,Actual,79.51
+A013-004.png,Actual,Actual,76.94
+A017-047.png,Actual,Edited,35.53
+A018-056.png,Actual,Actual,78.53
+A023-033.png,Actual,AI Generated,74.26
+A024-034.png,Actual,Edited,44.63
+A025-051.png,Actual,Actual,54.84
+A026-008.png,Actual,AI Generated,36.83
+A027-106.png,Actual,Actual,85.13
+A031-024.png,Actual,Actual,72.87
+A033-052.png,Actual,Actual,81.58
+A035-116.png,Actual,Actual,75.84
+A037-005.png,Actual,Actual,73.57
+A040-126.png,Actual,AI Generated,60.76
+A042-459.png,Actual,Actual,60.51
+A045-215.png,Actual,Actual,64.93
+A048-135.png,Actual,Actual,93.95
+A049-021.png,Actual,Actual,75.36
+A050-200.png,Actual,Actual,65.82
+B001-047.png,Actual,Actual,59.79
+B004-045.png,Actual,AI Generated,65.2
+B005-051.png,Actual,Actual,63.65
+B007-056.png,Actual,AI Generated,66.39
+B011-102.png,Actual,AI Generated,80.99
+B015-017.png,Actual,Actual,83.41
+B017-110.png,Actual,AI Generated,61.2
+B021-354.png,Actual,AI Generated,64.25
+B022-045.png,Actual,AI Generated,75.75
+B023-048.png,Actual,Actual,84.2
+B025-024.png,Actual,AI Generated,71.93
+B026-215.png,Actual,AI Generated,60.27
+B028-034.png,Actual,AI Generated,63.29
+B029-357.png,Actual,AI Generated,79.41
+B031-053.png,Actual,AI Generated,65.33
+B032-047.png,Actual,Actual,51.18
+B035-247.png,Actual,AI Generated,50.25
+B037-012.png,Actual,Actual,75.61
+B039-500.png,Actual,Actual,77.74
+B040-037.png,Actual,Actual,51.49
+B043-118.png,Actual,AI Generated,75.61
+B044-136.png,Actual,Actual,65.0
+B046-304.png,Actual,Actual,91.95
+B048-131.png,Actual,AI Generated,39.97
+B049-327.png,Actual,Actual,71.02
+C001-103.png,Actual,Actual,47.46
+C002-134.png,Actual,AI Generated,51.16
+C003-005.png,Actual,AI Generated,65.14
+C005-005.png,Actual,AI Generated,70.75
+C006-121.png,Actual,AI Generated,45.5
+C007-209.png,Actual,Actual,52.0
+C008-011.png,Actual,AI Generated,59.57
+C009-009.png,Actual,Actual,68.58
+C010-120.png,Actual,AI Generated,69.46
+C013-302.png,Actual,Edited,43.37
+C014-038.png,Actual,Actual,37.74
+C015-355.png,Actual,Actual,49.33
+C016-039.png,Actual,Actual,51.26
+C018-017.png,Actual,AI Generated,88.56
+C020-055.png,Actual,AI Generated,59.54
+C021-038.png,Actual,AI Generated,39.2
+C022-159.png,Actual,Actual,57.42
+C023-016.png,Actual,AI Generated,58.92
+C025-040.png,Actual,AI Generated,65.28
+C027-105.png,Actual,Actual,45.06
+C028-106.png,Actual,Actual,65.68
+C029-029.png,Actual,AI Generated,49.18
+C030-033.png,Actual,AI Generated,41.8
+C031-041.png,Actual,Actual,64.81
+C032-006.png,Actual,AI Generated,61.65
+C038-004.png,Actual,Actual,59.76
+C042-301.png,Actual,AI Generated,60.18
+C044-034.png,Actual,AI Generated,60.06
+C049-005.png,Actual,Actual,69.99
+C051-022.png,Actual,AI Generated,82.55
+C052-041.png,Actual,Actual,81.2
+D001-049.png,Actual,AI Generated,91.6
+D002-128.png,Actual,AI Generated,80.56
+D004-015.png,Actual,AI Generated,48.34
+D006-331.png,Actual,AI Generated,63.12
+D007-030.png,Actual,AI Generated,47.4
+D009-033.png,Actual,AI Generated,38.22
+D010-142.png,Actual,Actual,60.57
+D012-025.png,Actual,AI Generated,73.38
+D013-029.png,Actual,AI Generated,48.57
+D016-121.png,Actual,AI Generated,62.43
+D017-047.png,Actual,AI Generated,50.98
+D019-008.png,Actual,Actual,56.75
+D020-114.png,Actual,Actual,50.94
+D021-040.png,Actual,Actual,60.33
+D022-114.png,Actual,AI Generated,49.38
+D026-037.png,Actual,AI Generated,57.68
+D027-036.png,Actual,Actual,65.66
+D031-112.png,Actual,AI Generated,53.16
+D045-215.png,Actual,Edited,40.54
+D046-053.png,Actual,Actual,54.78
+D048-025.png,Actual,AI Generated,65.65
+E002-010.png,Actual,Actual,60.54
+E004-005.png,Actual,Edited,58.4
+E010-008.png,Actual,Actual,75.12
+E011-009.png,Actual,Actual,78.06
+E012-009.png,Actual,Actual,44.15
+E013-015.png,Actual,AI Generated,79.62
+E019-027.png,Actual,AI Generated,58.12
+E020-022.png,Actual,Actual,51.12
+E021-002.png,Actual,Actual,91.25
+E027-003.png,Actual,Actual,38.99
+E028-016.png,Actual,Actual,53.13
+E029-004.png,Actual,Actual,43.19
+E030-036.png,Actual,Actual,45.99
+E031-002.png,Actual,Edited,46.85
+E032-020.png,Actual,AI Generated,58.16
+E034-008.png,Actual,Actual,50.92
+E035-002.png,Actual,Edited,62.68
+E039-002.png,Actual,AI Generated,67.7
+E075-004.png,Actual,Actual,69.86
+E127-113.png,Actual,AI Generated,61.88
+E145-014.png,Actual,AI Generated,66.24
+E146-014.png,Actual,AI Generated,67.01
+F004-022.png,Actual,Actual,54.28
+F011-109.png,Actual,AI Generated,57.12
+F013-030.png,Actual,AI Generated,72.88
+F014-310.png,Actual,Actual,52.68
+F017-021.png,Actual,Actual,54.93
+F018-029.png,Actual,AI Generated,51.65
+F019-037.png,Actual,Actual,51.52
+F020-208.png,Actual,Actual,55.79
+F022-137.png,Actual,Actual,44.07
+F023-012.png,Actual,AI Generated,63.98
+F025-045.png,Actual,Actual,50.15
+F026-002.png,Actual,Actual,49.28
+F028-009.png,Actual,AI Generated,54.44
+F030-024.png,Actual,Actual,56.44
+F031-045.png,Actual,Actual,52.0
+F033-430.png,Actual,Edited,59.66
+F036-121.png,Actual,Actual,72.97
+F039-023.png,Actual,Actual,58.42
+F041-019.png,Actual,Actual,76.55
+F048-048.png,Actual,Actual,57.22
+F050-056.png,Actual,AI Generated,71.13
+F054-005.png,Actual,Actual,53.53
+G001-101.png,Actual,AI Generated,45.16
+G005-028.png,Actual,Actual,74.57
+G008-253.png,Actual,Actual,57.31
+G009-227.png,Actual,Actual,58.98
+G010-028.png,Actual,AI Generated,53.82
+G015-110.png,Actual,AI Generated,54.67
+G016-023.png,Actual,AI Generated,60.18
+G017-013.png,Actual,AI Generated,52.97
+G019-009.png,Actual,Actual,53.75
+G020-119.png,Actual,Actual,49.89
+G021-111.png,Actual,AI Generated,67.62
+G029-038.png,Actual,AI Generated,42.6
+G031-007.png,Actual,AI Generated,48.55
+G040-445.png,Actual,Edited,54.73
+G042-129.png,Actual,Actual,57.98
+G044-612.png,Actual,AI Generated,51.02
+G048-008.png,Actual,Actual,67.58
+G049-036.png,Actual,AI Generated,55.87
+G052-133.png,Actual,Actual,77.49
+H001-042.png,Actual,Actual,54.06
+H008-146.png,Actual,AI Generated,66.43
+H010-113.png,Actual,Edited,56.6
+H011-037.png,Actual,Actual,53.37
+H012-020.png,Actual,AI Generated,51.56
+H013-115.png,Actual,AI Generated,61.13
+H014-005.png,Actual,AI Generated,66.56
+H015-113.png,Actual,AI Generated,64.53
+H017-011.png,Actual,AI Generated,62.66
+H018-037.png,Actual,Actual,56.6
+H020-018.png,Actual,Actual,67.95
+H022-144.png,Actual,Actual,53.7
+H023-301.png,Actual,AI Generated,51.31
+H024-023.png,Actual,AI Generated,77.08
+H026-018.png,Actual,Actual,72.96
+H027-015.png,Actual,AI Generated,57.45
+H028-123.png,Actual,AI Generated,52.19
+H031-028.png,Actual,Actual,76.97
+H033-019.png,Actual,AI Generated,50.61
+H034-044.png,Actual,Actual,45.82
+H035-013.png,Actual,Actual,51.16
+H036-022.png,Actual,Actual,37.16
+H040-008.png,Actual,Actual,49.66
+H042-138.png,Actual,Actual,56.18
+H043-140.png,Actual,AI Generated,65.09
+H048-206.png,Actual,Actual,75.07
+H049-208.png,Actual,AI Generated,65.59
+enhanced_A001-010.png,Edited,Actual,47.83
+enhanced_A003-032.png,Edited,Actual,40.29
+enhanced_A005-023.png,Edited,Actual,58.66
+enhanced_A008-229.png,Edited,Actual,57.27
+enhanced_A013-004.png,Edited,Actual,69.5
+enhanced_A017-047.png,Edited,Actual,43.98
+enhanced_A018-056.png,Edited,Actual,78.19
+enhanced_A023-033.png,Edited,Actual,46.7
+enhanced_A024-034.png,Edited,Edited,81.72
+enhanced_A025-051.png,Edited,Edited,44.44
+enhanced_A026-008.png,Edited,AI Generated,72.72
+enhanced_A027-106.png,Edited,Actual,79.06
+enhanced_A031-024.png,Edited,Actual,65.06
+enhanced_A033-052.png,Edited,Actual,49.23
+enhanced_A035-116.png,Edited,Actual,61.22
+enhanced_A037-005.png,Edited,Actual,40.7
+enhanced_A040-126.png,Edited,AI Generated,64.56
+enhanced_A042-459.png,Edited,Edited,46.02
+enhanced_A045-215.png,Edited,AI Generated,54.07
+enhanced_A048-135.png,Edited,Actual,86.09
+enhanced_A049-021.png,Edited,Actual,81.96
+enhanced_A050-200.png,Edited,AI Generated,63.95
+enhanced_B001-047.png,Edited,Actual,71.91
+enhanced_B004-045.png,Edited,AI Generated,76.62
+enhanced_B005-051.png,Edited,Actual,77.35
+enhanced_B007-056.png,Edited,AI Generated,58.19
+enhanced_B011-102.png,Edited,AI Generated,77.38
+enhanced_B015-017.png,Edited,AI Generated,62.47
+enhanced_B017-110.png,Edited,Edited,39.3
+enhanced_B021-354.png,Edited,Actual,55.17
+enhanced_B022-045.png,Edited,AI Generated,48.16
+enhanced_B023-048.png,Edited,Actual,69.24
+enhanced_B025-024.png,Edited,AI Generated,83.47
+enhanced_B026-215.png,Edited,AI Generated,59.27
+enhanced_B028-034.png,Edited,Actual,71.75
+enhanced_B029-357.png,Edited,AI Generated,64.41
+enhanced_B031-053.png,Edited,AI Generated,75.79
+enhanced_B032-047.png,Edited,Actual,57.23
+enhanced_B035-247.png,Edited,Actual,35.98
+enhanced_B037-012.png,Edited,Edited,59.51
+enhanced_B039-500.png,Edited,Actual,59.83
+enhanced_B040-037.png,Edited,Edited,75.04
+enhanced_B043-118.png,Edited,AI Generated,55.39
+enhanced_B044-136.png,Edited,Actual,51.78
+enhanced_B046-304.png,Edited,Actual,88.59
+enhanced_B048-131.png,Edited,Edited,53.11
+enhanced_B049-327.png,Edited,Actual,74.19
+enhanced_C001-103.png,Edited,Actual,46.0
+enhanced_C002-134.png,Edited,Edited,60.36
+enhanced_C003-005.png,Edited,Actual,37.25
+enhanced_C005-005.png,Edited,AI Generated,42.5
+enhanced_C006-121.png,Edited,AI Generated,45.91
+enhanced_C007-209.png,Edited,Edited,62.3
+enhanced_C008-011.png,Edited,Edited,46.16
+enhanced_C009-009.png,Edited,Actual,53.71
+enhanced_C010-120.png,Edited,AI Generated,73.36
+enhanced_C013-302.png,Edited,Edited,68.5
+enhanced_C014-038.png,Edited,Edited,81.46
+enhanced_C015-355.png,Edited,Actual,53.74
+enhanced_C016-039.png,Edited,Edited,59.05
+enhanced_C018-017.png,Edited,AI Generated,65.63
+enhanced_C020-055.png,Edited,AI Generated,41.46
+enhanced_C021-038.png,Edited,AI Generated,59.76
+enhanced_C022-159.png,Edited,Edited,64.43
+enhanced_C023-016.png,Edited,AI Generated,46.22
+enhanced_C025-040.png,Edited,AI Generated,38.82
+enhanced_C027-105.png,Edited,Edited,60.13
+enhanced_C028-106.png,Edited,Actual,57.72
+enhanced_C029-029.png,Edited,Actual,35.55
+enhanced_C030-033.png,Edited,Edited,43.18
+enhanced_C031-041.png,Edited,Actual,73.98
+enhanced_C032-006.png,Edited,AI Generated,46.52
+enhanced_C038-004.png,Edited,AI Generated,40.72
+enhanced_C042-301.png,Edited,Edited,46.97
+enhanced_C044-034.png,Edited,Actual,38.28
+enhanced_C049-005.png,Edited,Actual,55.01
+enhanced_C051-022.png,Edited,AI Generated,68.5
+enhanced_C052-041.png,Edited,Actual,46.79
+enhanced_D001-049.png,Edited,AI Generated,76.02
+enhanced_D002-128.png,Edited,AI Generated,53.14
+enhanced_D004-015.png,Edited,Edited,49.36
+enhanced_D006-331.png,Edited,AI Generated,67.8
+enhanced_D007-030.png,Edited,Actual,44.89
+enhanced_D009-033.png,Edited,Edited,35.81
+enhanced_D010-142.png,Edited,Actual,51.14
+enhanced_D012-025.png,Edited,AI Generated,39.74
+enhanced_D013-029.png,Edited,Actual,52.8
+enhanced_D016-121.png,Edited,Edited,66.51
+enhanced_D017-047.png,Edited,Actual,39.6
+enhanced_D019-008.png,Edited,Actual,43.19
+enhanced_D020-114.png,Edited,Actual,36.37
+enhanced_D021-040.png,Edited,AI Generated,45.31
+enhanced_D022-114.png,Edited,AI Generated,66.02
+enhanced_D026-037.png,Edited,AI Generated,54.62
+enhanced_D027-036.png,Edited,AI Generated,61.1
+enhanced_D031-112.png,Edited,Edited,50.1
+enhanced_D045-215.png,Edited,Edited,84.05
+enhanced_D046-053.png,Edited,Actual,44.8
+enhanced_D048-025.png,Edited,AI Generated,73.78
+enhanced_E002-010.png,Edited,AI Generated,76.67
+enhanced_E004-005.png,Edited,Edited,83.8
+enhanced_E010-008.png,Edited,Actual,82.25
+enhanced_E011-009.png,Edited,Actual,41.25
+enhanced_E012-009.png,Edited,Edited,38.39
+enhanced_E013-015.png,Edited,AI Generated,45.57
+enhanced_E019-027.png,Edited,Edited,47.67
+enhanced_E020-022.png,Edited,AI Generated,59.73
+enhanced_E021-002.png,Edited,Actual,66.52
+enhanced_E027-003.png,Edited,AI Generated,46.5
+enhanced_E028-016.png,Edited,Edited,46.01
+enhanced_E029-004.png,Edited,AI Generated,52.16
+enhanced_E030-036.png,Edited,Edited,76.37
+enhanced_E031-002.png,Edited,Edited,56.69
+enhanced_E032-020.png,Edited,AI Generated,49.73
+enhanced_E034-008.png,Edited,Edited,34.93
+enhanced_E035-002.png,Edited,Edited,51.39
+enhanced_E039-002.png,Edited,Actual,49.15
+enhanced_E075-004.png,Edited,Edited,52.74
+enhanced_E127-113.png,Edited,AI Generated,59.23
+enhanced_E145-014.png,Edited,AI Generated,50.65
+enhanced_E146-014.png,Edited,Actual,53.46
+enhanced_F004-022.png,Edited,AI Generated,73.78
+enhanced_F011-109.png,Edited,Actual,35.82
+enhanced_F013-030.png,Edited,AI Generated,77.04
+enhanced_F014-310.png,Edited,AI Generated,47.74
+enhanced_F017-021.png,Edited,Actual,62.06
+enhanced_F018-029 (3).png,Edited,Edited,42.9
+enhanced_F019-037 (1).png,Edited,Actual,45.42
+enhanced_F020-208.png,Edited,Edited,45.8
+enhanced_F022-137 (1).png,Edited,Edited,64.19
+enhanced_F023-012.png,Edited,AI Generated,53.71
+enhanced_F025-045.png,Edited,AI Generated,62.34
+enhanced_F026-002.png,Edited,Edited,43.41
+enhanced_F028-009.png,Edited,AI Generated,60.71
+enhanced_F030-024.png,Edited,Edited,40.45
+enhanced_F031-045.png,Edited,Edited,58.87
+enhanced_F033-430.png,Edited,Edited,83.27
+enhanced_F036-121.png,Edited,Edited,46.07
+enhanced_F039-023.png,Edited,Actual,54.45
+enhanced_F041-019.png,Edited,Edited,63.11
+enhanced_F048-048.png,Edited,Actual,39.12
+enhanced_F050-056.png,Edited,Edited,57.41
+enhanced_F054-005.png,Edited,Actual,47.72
+enhanced_G001-101.png,Edited,AI Generated,45.1
+enhanced_G005-028.png,Edited,Edited,47.98
+enhanced_G008-253.png,Edited,Actual,73.83
+enhanced_G009-227.png,Edited,Edited,91.12
+enhanced_G010-028.png,Edited,Edited,85.71
+enhanced_G015-110.png,Edited,Edited,74.73
+enhanced_G016-023.png,Edited,AI Generated,50.85
+enhanced_G017-013.png,Edited,Actual,37.24
+enhanced_G019-009.png,Edited,Edited,55.63
+enhanced_G020-119.png,Edited,Actual,47.51
+enhanced_G021-111.png,Edited,Actual,49.25
+enhanced_G029-038.png,Edited,Edited,50.44
+enhanced_G031-007.png,Edited,Edited,89.97
+enhanced_G040-445.png,Edited,Edited,77.16
+enhanced_G042-129.png,Edited,Edited,48.48
+enhanced_G044-612.png,Edited,Actual,34.62
+enhanced_G048-008.png,Edited,Edited,52.18
+enhanced_G049-036.png,Edited,AI Generated,44.6
+enhanced_G052-133.png,Edited,Actual,58.37
+enhanced_H001-042.png,Edited,Edited,50.4
+enhanced_H008-146.png,Edited,Edited,71.22
+enhanced_H010-113.png,Edited,Edited,66.7
+enhanced_H011-037.png,Edited,Edited,42.69
+enhanced_H012-020.png,Edited,AI Generated,59.53
+enhanced_H013-115.png,Edited,AI Generated,68.03
+enhanced_H014-005.png,Edited,AI Generated,38.77
+enhanced_H015-113.png,Edited,Actual,63.18
+enhanced_H017-011.png,Edited,AI Generated,65.41
+enhanced_H018-037.png,Edited,AI Generated,50.7
+enhanced_H020-018.png,Edited,AI Generated,59.21
+enhanced_H022-144.png,Edited,Edited,88.48
+enhanced_H023-301.png,Edited,Edited,77.8
+enhanced_H024-023.png,Edited,AI Generated,74.47
+enhanced_H026-018 (1).png,Edited,Actual,75.34
+enhanced_H027-015.png,Edited,Actual,46.86
+enhanced_H028-123.png,Edited,AI Generated,47.57
+enhanced_H031-028.png,Edited,AI Generated,38.75
+enhanced_H033-019.png,Edited,AI Generated,63.77
+enhanced_H034-044.png,Edited,Edited,50.6
+enhanced_H035-013.png,Edited,AI Generated,50.69
+enhanced_H036-022.png,Edited,Edited,61.18
+enhanced_H040-008.png,Edited,AI Generated,49.24
+enhanced_H042-138.png,Edited,AI Generated,55.35
+enhanced_H043-140.png,Edited,Edited,65.17
+enhanced_H048-206.png,Edited,Actual,58.18
+enhanced_H049-208.png,Edited,AI Generated,75.55
+AI_A001-010.png,AI Generated,Actual,62.12
+AI_A003-032.png,AI Generated,Actual,69.66
+AI_A005-023.png,AI Generated,AI Generated,52.34
+AI_A008-229.png,AI Generated,Actual,68.54
+AI_A013-004.png,AI Generated,Actual,72.59
+AI_A017-047.png,AI Generated,Edited,51.86
+AI_A018-056.png,AI Generated,AI Generated,62.92
+AI_A023-033.png,AI Generated,AI Generated,54.83
+AI_A024-034.png,AI Generated,AI Generated,57.1
+AI_A025-051.png,AI Generated,Actual,57.38
+AI_A026-008.png,AI Generated,AI Generated,58.11
+AI_A027-106.png,AI Generated,Actual,90.88
+AI_A031-024.png,AI Generated,AI Generated,65.66
+AI_A033-052.png,AI Generated,Actual,70.8
+AI_A035-116.png,AI Generated,AI Generated,53.57
+AI_A037-005.png,AI Generated,Edited,61.63
+AI_A040-126.png,AI Generated,Actual,60.79
+AI_A042-459.png,AI Generated,Actual,44.7
+AI_A045-215.png,AI Generated,Actual,82.08
+AI_A048-135.png,AI Generated,Actual,95.28
+AI_A049-021.png,AI Generated,Actual,58.76
+AI_A050-200.png,AI Generated,AI Generated,41.02
+AI_B001-047.png,AI Generated,Actual,60.89
+AI_B004-045.png,AI Generated,AI Generated,85.21
+AI_B005-051.png,AI Generated,Actual,58.16
+AI_B007-056.png,AI Generated,AI Generated,79.19
+AI_B011-102.png,AI Generated,AI Generated,87.93
+AI_B015-017.png,AI Generated,Actual,75.48
+AI_B017-110.png,AI Generated,Actual,65.96
+AI_B021-354.png,AI Generated,Actual,70.91
+AI_B022-045.png,AI Generated,AI Generated,61.25
+AI_B023-048.png,AI Generated,Actual,70.11
+AI_B025-024.png,AI Generated,AI Generated,76.33
+AI_B026-215.png,AI Generated,AI Generated,68.82
+AI_B028-034.png,AI Generated,AI Generated,53.56
+AI_B029-357.png,AI Generated,AI Generated,88.59
+AI_B031-053.png,AI Generated,AI Generated,52.39
+AI_B032-047.png,AI Generated,AI Generated,72.74
+AI_B035-247.png,AI Generated,AI Generated,62.77
+AI_B037-012.png,AI Generated,Actual,48.52
+AI_B039-500.png,AI Generated,Actual,80.07
+AI_B040-037.png,AI Generated,Actual,64.23
+AI_B043-118.png,AI Generated,AI Generated,34.34
+AI_B044-136.png,AI Generated,AI Generated,41.02
+AI_B046-304.png,AI Generated,Actual,67.43
+AI_B048-131.png,AI Generated,Edited,73.12
+AI_B049-327.png,AI Generated,AI Generated,61.58
+AI_C001-103.png,AI Generated,Actual,66.07
+AI_C002-134.png,AI Generated,AI Generated,37.93
+AI_C003-005.png,AI Generated,AI Generated,76.71
+AI_C005-005.png,AI Generated,AI Generated,76.27
+AI_C006-121.png,AI Generated,AI Generated,66.06
+AI_C007-209.png,AI Generated,Edited,38.83
+AI_C008-011.png,AI Generated,AI Generated,75.53
+AI_C009-009.png,AI Generated,Actual,65.31
+AI_C010-120.png,AI Generated,AI Generated,71.42
+AI_C013-302.png,AI Generated,Actual,41.93
+AI_C014-038.png,AI Generated,Actual,57.09
+AI_C015-355.png,AI Generated,AI Generated,71.93
+AI_C016-039.png,AI Generated,AI Generated,49.94
+AI_C018-017.png,AI Generated,AI Generated,83.73
+AI_C020-055.png,AI Generated,AI Generated,55.19
+AI_C021-038.png,AI Generated,AI Generated,45.98
+AI_C022-159.png,AI Generated,Actual,77.8
+AI_C023-016.png,AI Generated,Actual,68.16
+AI_C025-040.png,AI Generated,AI Generated,65.35
+AI_C027-105.png,AI Generated,AI Generated,75.56
+AI_C028-106.png,AI Generated,Actual,57.64
+AI_C029-029.png,AI Generated,AI Generated,66.8
+AI_C030-033.png,AI Generated,Actual,55.5
+AI_C031-041.png,AI Generated,Actual,63.15
+AI_C032-006.png,AI Generated,AI Generated,65.17
+AI_C038-004.png,AI Generated,Actual,63.0
+AI_C042-301.png,AI Generated,AI Generated,69.09
+AI_C044-034.png,AI Generated,AI Generated,61.01
+AI_C049-005.png,AI Generated,Actual,62.24
+AI_C051-022.png,AI Generated,Actual,52.96
+AI_C052-041.png,AI Generated,AI Generated,51.65
+AI_D001-049.png,AI Generated,AI Generated,57.28
+AI_D002-128.png,AI Generated,AI Generated,45.36
+AI_D004-015.png,AI Generated,AI Generated,44.74
+AI_D006-331.png,AI Generated,Edited,42.26
+AI_D007-030.png,AI Generated,Actual,70.97
+AI_D009-033.png,AI Generated,Actual,48.88
+AI_D010-142.png,AI Generated,Actual,53.61
+AI_D012-025.png,AI Generated,AI Generated,77.95
+AI_D013-029.png,AI Generated,AI Generated,51.69
+AI_D016-121.png,AI Generated,Edited,47.14
+AI_D017-047.png,AI Generated,AI Generated,41.02
+AI_D019-008.png,AI Generated,AI Generated,51.22
+AI_D020-114.png,AI Generated,Actual,56.09
+AI_D021-040.png,AI Generated,AI Generated,61.99
+AI_D022-114.png,AI Generated,AI Generated,57.75
+AI_D026-037.png,AI Generated,AI Generated,46.94
+AI_D027-036.png,AI Generated,AI Generated,48.16
+AI_D031-112.png,AI Generated,AI Generated,42.57
+AI_D045-215.png,AI Generated,Edited,70.99
+AI_D046-053.png,AI Generated,AI Generated,40.74
+AI_D048-025.png,AI Generated,AI Generated,57.93
+AI_E002-010.png,AI Generated,AI Generated,57.06
+AI_E004-005.png,AI Generated,Edited,46.06
+AI_E010-008.png,AI Generated,Actual,52.64
+AI_E011-009.png,AI Generated,Actual,59.27
+AI_E012-009.png,AI Generated,Actual,63.75
+AI_E013-015.png,AI Generated,AI Generated,66.25
+AI_E019-027.png,AI Generated,AI Generated,40.66
+AI_E020-022.png,AI Generated,Actual,52.82
+AI_E021-002.png,AI Generated,Actual,81.86
+AI_E027-003.png,AI Generated,AI Generated,55.11
+AI_E028-016.png,AI Generated,AI Generated,43.73
+AI_E029-004.png,AI Generated,AI Generated,36.47
+AI_E030-036.png,AI Generated,Edited,42.39
+AI_E031-002.png,AI Generated,Actual,45.81
+AI_E032-020.png,AI Generated,AI Generated,58.41
+AI_E034-008.png,AI Generated,Edited,55.06
+AI_E035-002.png,AI Generated,AI Generated,57.58
+AI_E039-002.png,AI Generated,AI Generated,45.26
+AI_E075-004.png,AI Generated,Actual,46.66
+AI_E127-113.png,AI Generated,AI Generated,66.66
+AI_E145-014.png,AI Generated,AI Generated,65.26
+AI_E146-014.png,AI Generated,Actual,61.73
+AI_F004-022.png,AI Generated,AI Generated,74.73
+AI_F011-109.png,AI Generated,AI Generated,78.84
+AI_F013-030.png,AI Generated,Actual,51.8
+AI_F014-310.png,AI Generated,Actual,51.96
+AI_F017-021.png,AI Generated,Actual,77.69
+AI_F018-029.png,AI Generated,AI Generated,64.26
+AI_F019-037.png,AI Generated,AI Generated,42.61
+AI_F020-208.png,AI Generated,Edited,47.07
+AI_F022-137.png,AI Generated,Actual,61.63
+AI_F023-012.png,AI Generated,AI Generated,73.63
+AI_F025-045.png,AI Generated,AI Generated,59.75
+AI_F026-002.png,AI Generated,AI Generated,39.15
+AI_F028-009.png,AI Generated,Actual,48.72
+AI_F030-024.png,AI Generated,Actual,44.01
+AI_F031-045.png,AI Generated,Actual,47.18
+AI_F033-430.png,AI Generated,Edited,42.97
+AI_F036-121.png,AI Generated,AI Generated,83.74
+AI_F039-023.png,AI Generated,Actual,72.07
+AI_F041-019.png,AI Generated,Actual,52.57
+AI_F048-048.png,AI Generated,AI Generated,53.11
+AI_F050-056.png,AI Generated,AI Generated,67.97
+AI_F054-005.png,AI Generated,Actual,47.97
+AI_G001-101.png,AI Generated,Edited,62.33
+AI_G005-028.png,AI Generated,Actual,71.33
+AI_G008-253.png,AI Generated,AI Generated,42.98
+AI_G009-227.png,AI Generated,Actual,57.73
+AI_G010-028.png,AI Generated,AI Generated,43.64
+AI_G015-110.png,AI Generated,AI Generated,47.35
+AI_G016-023.png,AI Generated,AI Generated,74.61
+AI_G017-013.png,AI Generated,AI Generated,70.04
+AI_G019-009.png,AI Generated,Edited,48.19
+AI_G020-119.png,AI Generated,Actual,52.5
+AI_G021-111.png,AI Generated,Actual,47.0
+AI_G029-038.png,AI Generated,AI Generated,64.83
+AI_G031-007.png,AI Generated,Edited,59.23
+AI_G040-445.png,AI Generated,Actual,41.84
+AI_G042-129.png,AI Generated,Actual,43.49
+AI_G044-612.png,AI Generated,AI Generated,50.49
+AI_G048-008.png,AI Generated,AI Generated,47.72
+AI_G049-036.png,AI Generated,Actual,50.81
+AI_G052-133.png,AI Generated,Actual,50.56
+AI_H001-042.png,AI Generated,Actual,73.37
+AI_H008-146.png,AI Generated,AI Generated,77.22
+AI_H010-113.png,AI Generated,Edited,65.12
+AI_H011-037.png,AI Generated,AI Generated,56.79
+AI_H012-020.png,AI Generated,AI Generated,65.21
+AI_H013-115.png,AI Generated,AI Generated,66.5
+AI_H014-005.png,AI Generated,AI Generated,50.92
+AI_H015-113.png,AI Generated,AI Generated,67.98
+AI_H017-011.png,AI Generated,AI Generated,67.64
+AI_H018-037.png,AI Generated,AI Generated,50.6
+AI_H020-018.png,AI Generated,Actual,68.24
+AI_H022-144.png,AI Generated,Actual,45.81
+AI_H023-301.png,AI Generated,Edited,48.88
+AI_H024-023.png,AI Generated,AI Generated,81.45
+AI_H026-018.png,AI Generated,Actual,82.64
+AI_H027-015.png,AI Generated,AI Generated,48.32
+AI_H028-123.png,AI Generated,Actual,58.2
+AI_H031-028.png,AI Generated,Actual,51.4
+AI_H033-019.png,AI Generated,Actual,61.26
+AI_H034-044.png,AI Generated,Actual,54.97
+AI_H035-013.png,AI Generated,Actual,59.88
+AI_H036-022.png,AI Generated,AI Generated,48.83
+AI_H040-008.png,AI Generated,Actual,85.38
+AI_H042-138.png,AI Generated,AI Generated,41.02
+AI_H043-140.png,AI Generated,AI Generated,55.78
+AI_H048-206.png,AI Generated,Actual,40.71
+AI_H049-208.png,AI Generated,AI Generated,63.67
