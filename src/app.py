@@ -20,7 +20,7 @@ from src.visualization import (
 
 
 st.set_page_config(
-    page_title="Image Authentication",
+    page_title="Module 1 - Detection & classification of synthetic or actual images in legal evidence",
     layout="wide"
 )
 
@@ -150,7 +150,7 @@ st.markdown(
 
 
 st.title(
-    "Image Authentication Framework"
+    "Module 1 - Detection & classification of synthetic or actual images in legal evidence"
 )
 
 
@@ -165,6 +165,7 @@ menu = st.sidebar.selectbox(
     "Menu",
 
     [
+        "About the Research",
 
         "Single Image Prediction",
 
@@ -176,14 +177,155 @@ menu = st.sidebar.selectbox(
 
 )
 
+# =====================================================
+# ABOUT THE RESEARCH
+# =====================================================
 
+if menu == "About the Research":
+
+    st.header("📖 About the Research")
+
+    st.markdown("""
+    ### Title
+
+    **Detection & Classification of Synthetic or Actual Images in Legal Evidence**
+
+    This research focuses on developing an intelligent image authentication framework
+    capable of distinguishing between real photographs, manipulated images, and
+    AI-generated images that may be presented as legal evidence.
+    """)
+
+    st.divider()
+
+    st.subheader("🎯 Research Problem")
+
+    st.write("""
+    Digital images have become an important source of evidence in criminal
+    investigations, civil disputes, insurance claims, and social media.
+    However, recent advances in image editing software and generative AI
+    make it increasingly difficult to determine whether an image is authentic.
+
+    Existing forensic tools mainly perform binary classification and often
+    cannot distinguish between edited images and AI-generated images.
+    """)
+
+    st.divider()
+
+    st.subheader("🔍 Research Gap")
+
+    st.info("""
+    • Most existing systems classify images only as Real or Fake.
+
+    • They do not separately identify manipulated images and AI-generated images.
+
+    • Existing tools provide very limited confidence information.
+
+    • Most systems are designed for technical experts rather than legal professionals.
+
+    • Few systems explain their predictions in a user-friendly manner.
+    """)
+
+    st.divider()
+
+    st.subheader("💡 Proposed Solution")
+
+    st.success("""
+    The proposed framework classifies images into three categories:
+
+    ✅ Actual Images
+
+    🟠 Edited Images
+
+    🔴 AI Generated Images
+
+    The system also provides:
+
+    • Prediction confidence score
+
+    • Visual confidence indicator
+
+    • Dataset evaluation
+
+    • Performance metrics
+
+    • Explainable results for legal evidence analysis
+    """)
+
+    st.divider()
+
+    st.subheader("🎯 Objectives")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+
+        st.markdown("""
+        **Main Objective**
+
+        Develop an intelligent framework capable of detecting and classifying
+        synthetic and actual images used as legal evidence.
+        """)
+
+    with col2:
+
+        st.markdown("""
+        **Specific Objectives**
+
+        • Detect actual images
+
+        • Detect edited images
+
+        • Detect AI-generated images
+
+        • Display confidence scores
+
+        • Evaluate model performance
+        """)
+
+    st.divider()
+
+    st.subheader("⚙️ Technologies Used")
+
+    st.markdown("""
+    - Python
+
+    - TensorFlow / Keras
+
+    - MobileNet
+
+    - OpenCV
+
+    - NumPy
+
+    - Streamlit
+
+    - Google Colab
+
+    - VS Code
+    """)
+
+    st.divider()
+
+    st.subheader("📊 Dataset")
+
+    st.write("""
+    The dataset consists of three image categories:
+
+    🟢 Actual Images
+
+    🟠 Edited Images
+
+    🔴 AI Generated Images
+
+    All images are preprocessed before training the MobileNet model.
+    """)
 
 # =====================================================
 # SINGLE IMAGE PREDICTION
 # =====================================================
 
 
-if menu=="Single Image Prediction":
+elif menu=="Single Image Prediction":
 
 
     file = st.file_uploader(
