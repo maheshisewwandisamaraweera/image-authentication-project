@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 import numpy as np
 import cv2
-
+import base64
 
 
 from src.prediction import predict_image
@@ -26,13 +26,141 @@ st.set_page_config(
 
 
 
+# =====================================================
+# BACKGROUND IMAGE + SIDEBAR COLOR
+# =====================================================
+
+
+def get_base64_image(image_path):
+
+    with open(image_path, "rb") as img:
+
+        return base64.b64encode(
+            img.read()
+        ).decode()
+
+
+
+background = get_base64_image(
+   r"C:\Users\Sewwandi\Desktop\image-authentication-project\src\assets\background_1.jpg"
+)
+
+
+
+st.markdown(
+    f"""
+    <style>
+
+
+    /* MAIN BACKGROUND */
+
+    .stApp {{
+
+        background-image:
+        url("data:image/jpg;base64,{background}");
+
+        background-size: cover;
+
+        background-position: center;
+
+        background-attachment: fixed;
+
+    }}
+
+
+
+    /* MAIN CONTENT TRANSPARENT CARD */
+
+    .block-container {{
+
+        background-color:
+        rgba(255,255,255,0.88);
+
+        border-radius:20px;
+
+        padding:2rem;
+
+    }}
+
+
+
+
+    /* SIDEBAR COLOR */
+
+    section[data-testid="stSidebar"] {{
+
+        background-color:#1B263B;
+
+    }}
+
+
+
+
+    section[data-testid="stSidebar"] label {{
+
+        color:white;
+
+    }}
+
+
+
+    section[data-testid="stSidebar"] p {{
+
+        color:white;
+
+    }}
+
+
+
+    /* SIDEBAR MENU BOX */
+
+    section[data-testid="stSidebar"] div[data-baseweb="select"] > div {{
+
+        background-color:#415A77;
+
+        color:white;
+
+        border-radius:8px;
+
+    }}
+
+
+
+    section[data-testid="stSidebar"] div[data-baseweb="select"] span {{
+
+        color:white;
+
+    }}
+
+
+
+    </style>
+
+    """,
+
+    unsafe_allow_html=True
+)
+
+
+
+
+# =====================================================
+# TITLE
+# =====================================================
+
+
 st.title(
     "Image Authentication Framework"
 )
 
 
 
-menu=st.sidebar.selectbox(
+# =====================================================
+# NAVIGATION
+# =====================================================
+
+
+menu = st.sidebar.selectbox(
 
     "Menu",
 
@@ -50,15 +178,15 @@ menu=st.sidebar.selectbox(
 
 
 
-# -----------------------
-# SINGLE IMAGE
-# -----------------------
+# =====================================================
+# SINGLE IMAGE PREDICTION
+# =====================================================
 
 
 if menu=="Single Image Prediction":
 
 
-    file=st.file_uploader(
+    file = st.file_uploader(
 
         "Upload Image",
 
@@ -71,10 +199,11 @@ if menu=="Single Image Prediction":
     )
 
 
+
     if file:
 
 
-        img_pil=Image.open(
+        img_pil = Image.open(
             file
         )
 
@@ -86,19 +215,33 @@ if menu=="Single Image Prediction":
 
 
 
-        img=np.array(
+        img = np.array(
             img_pil
         )
 
 
-        label,confidence=predict_image(
+
+        label,confidence = predict_image(
             img
         )
 
 
-        st.success(
-            label
-        )
+
+        if label=="Actual":
+
+            st.success(label)
+
+
+        elif label=="Edited":
+
+            st.warning(label)
+
+
+        else:
+
+            st.error(label)
+
+
 
 
         st.progress(
@@ -114,9 +257,11 @@ if menu=="Single Image Prediction":
 
 
 
-# -----------------------
-# DATASET
-# -----------------------
+
+
+# =====================================================
+# DATASET EVALUATION
+# =====================================================
 
 
 elif menu=="Dataset Evaluation":
@@ -127,23 +272,25 @@ elif menu=="Dataset Evaluation":
     )
 
 
+
     if st.button(
         "Start Evaluation"
     ):
 
 
-        bar=st.progress(
+
+        bar = st.progress(
             0
         )
 
 
-        text=st.empty()
+        text = st.empty()
 
 
 
         def update(current,total):
 
-            value=int(
+            value = int(
                 current/total*100
             )
 
@@ -161,12 +308,14 @@ elif menu=="Dataset Evaluation":
 
 
 
-        df=evaluate_dataset(
+
+        df = evaluate_dataset(
             update
         )
 
 
-        st.session_state["df"]=df
+
+        st.session_state["df"] = df
 
 
 
@@ -176,15 +325,19 @@ elif menu=="Dataset Evaluation":
 
 
 
+
+
     if "df" in st.session_state:
 
 
-        df=st.session_state["df"]
+        df = st.session_state["df"]
+
 
 
         st.dataframe(
             df
         )
+
 
 
         st.subheader(
@@ -196,15 +349,17 @@ elif menu=="Dataset Evaluation":
         for _,row in df.iterrows():
 
 
-            col1,col2=st.columns(
+
+            col1,col2 = st.columns(
                 [1,2]
             )
+
 
 
             with col1:
 
 
-                img=cv2.imread(
+                img = cv2.imread(
                     row["Image Path"]
                 )
 
@@ -220,8 +375,9 @@ elif menu=="Dataset Evaluation":
 
                 st.image(
                     img,
-                    width=200
+                    width=220
                 )
+
 
 
 
@@ -248,17 +404,21 @@ elif menu=="Dataset Evaluation":
 
                 st.write(
                     "Confidence:",
-                    str(row["Confidence"])+"%"
+                    f"{row['Confidence']}%"
                 )
 
 
+
                 if row["Result"]=="Correct":
+
 
                     st.success(
                         "Correct"
                     )
 
+
                 else:
+
 
                     st.error(
                         "Wrong"
@@ -271,9 +431,10 @@ elif menu=="Dataset Evaluation":
 
 
 
-# -----------------------
+
+# =====================================================
 # PERFORMANCE
-# -----------------------
+# =====================================================
 
 
 else:
@@ -287,6 +448,7 @@ else:
         )
 
 
+
     else:
 
 
@@ -297,6 +459,7 @@ else:
 
 
         c1,c2,c3,c4=st.columns(4)
+
 
 
         c1.metric(
@@ -325,10 +488,13 @@ else:
 
 
         st.pyplot(
+
             confusion_plot(
                 metrics["cm"]
             )
+
         )
+
 
 
         st.text(
