@@ -3,6 +3,7 @@ from PIL import Image
 import numpy as np
 import cv2
 import base64
+import pandas as pd
 
 
 from src.prediction import predict_image
@@ -14,10 +15,50 @@ from src.evaluation import (
 
 
 from src.visualization import (
-    confusion_plot
+    confusion_plot,
+    metrics_plot
 )
 
+def show_confidence_bar(prediction, confidence):
 
+    if prediction == "Actual":
+        color = "#00C853"      # Green
+
+    elif prediction == "Edited":
+        color = "#FF9800"      # Orange
+
+    elif prediction == "AI Generated":
+        color = "#F44336"      # Red
+
+    else:
+        color = "#808080"
+
+    confidence = float(confidence)
+
+    st.markdown(
+        f"""
+        <div style="
+            width:100%;
+            background:#E0E0E0;
+            height:25px;
+            border-radius:15px;
+        ">
+            <div style="
+                width:{confidence}%;
+                background:{color};
+                height:25px;
+                border-radius:15px;
+                text-align:center;
+                color:white;
+                font-weight:bold;
+                line-height:25px;
+            ">
+                {confidence:.2f}%
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
 st.set_page_config(
     page_title="Module 1 - Detection & classification of synthetic or actual images in legal evidence",
@@ -466,26 +507,27 @@ elif menu=="Dataset Evaluation":
         )
 
 
+        
 
 
+        if "df" in st.session_state:
 
-    if "df" in st.session_state:
+            df = st.session_state["df"]
 
+            display_df = df.drop(
+                columns=[
+                   "Actual Class",
+                   "Result"
+              ]
+            )
 
-        df = st.session_state["df"]
+            st.subheader(
+             "Images"
+            )
 
-
-
-        st.dataframe(
-            df
-        )
-
-
-
-        st.subheader(
-            "Images"
-        )
-
+            st.dataframe(
+                display_df
+            )
 
 
         for _,row in df.iterrows():
@@ -532,10 +574,10 @@ elif menu=="Dataset Evaluation":
                 )
 
 
-                st.write(
-                    "Actual:",
-                    row["Actual Class"]
-                )
+                # st.write(
+                #     "Actual:",
+                #     row["Actual Class"]
+                # )
 
 
                 st.write(
@@ -546,25 +588,30 @@ elif menu=="Dataset Evaluation":
 
                 st.write(
                     "Confidence:",
-                    f"{row['Confidence']}%"
+                    # f"{row['Confidence']}%"
+                )
+
+                show_confidence_bar(
+                    row["Prediction"],
+                    row["Confidence"]
                 )
 
 
 
-                if row["Result"]=="Correct":
+                # if row["Result"]=="Correct":
 
 
-                    st.success(
-                        "Correct"
-                    )
+                #     st.success(
+                #         "Correct"
+                #     )
 
 
-                else:
+                # else:
 
 
-                    st.error(
-                        "Wrong"
-                    )
+                #     st.error(
+                #         "Wrong"
+                #     )
 
 
 
@@ -579,7 +626,7 @@ elif menu=="Dataset Evaluation":
 # =====================================================
 
 
-else:
+elif menu=="Performance":
 
 
     if "df" not in st.session_state:
@@ -590,17 +637,21 @@ else:
         )
 
 
-
     else:
 
 
-        metrics=get_metrics(
+        metrics = get_metrics(
             st.session_state["df"]
         )
 
 
 
-        c1,c2,c3,c4=st.columns(4)
+        # =====================================================
+        # PERFORMANCE CARDS
+        # =====================================================
+
+
+        c1,c2,c3,c4 = st.columns(4)
 
 
 
@@ -610,10 +661,12 @@ else:
         )
 
 
+
         c2.metric(
             "Precision",
             f"{metrics['precision']*100:.2f}%"
         )
+
 
 
         c3.metric(
@@ -622,9 +675,21 @@ else:
         )
 
 
+
         c4.metric(
             "F1 Score",
             f"{metrics['f1']*100:.2f}%"
+        )
+
+
+
+        # =====================================================
+        # CONFUSION MATRIX
+        # =====================================================
+
+
+        st.subheader(
+            "Confusion Matrix"
         )
 
 
@@ -639,6 +704,44 @@ else:
 
 
 
-        st.text(
+        # =====================================================
+        # CLASSIFICATION REPORT TABLE
+        # =====================================================
+
+
+        st.subheader(
+            "Classification Report"
+        )
+
+
+
+        report_df = pd.DataFrame(
             metrics["report"]
+        ).transpose()
+
+
+
+        st.dataframe(
+            report_df
+        )
+
+
+
+        # =====================================================
+        # PRECISION RECALL F1 GRAPH
+        # =====================================================
+
+
+        st.subheader(
+            "Precision, Recall and F1 Score Visualization"
+        )
+
+
+
+        st.pyplot(
+
+            metrics_plot(
+                metrics["report"]
+            )
+
         )

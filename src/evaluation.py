@@ -216,6 +216,8 @@ def get_metrics(df):
 
         df["Prediction"],
 
+        output_dict=True,
+
         zero_division=0
 
     )
