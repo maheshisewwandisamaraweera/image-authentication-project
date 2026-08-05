@@ -367,6 +367,9 @@ if menu == "About the Research":
 
 
 elif menu=="Single Image Prediction":
+    st.header(
+        "Single Image Prediction"
+    )
 
 
     file = st.file_uploader(
@@ -383,7 +386,7 @@ elif menu=="Single Image Prediction":
 
 
 
-    if file:
+    if file is not None:
 
 
         img_pil = Image.open(
@@ -393,6 +396,7 @@ elif menu=="Single Image Prediction":
 
         st.image(
             img_pil,
+            caption="Uploaded Image",
             width=400
         )
 
@@ -408,38 +412,77 @@ elif menu=="Single Image Prediction":
             img
         )
 
+        st.divider()
+        confidence_percentage = confidence * 100
 
+        if label == "Actual":
+            bar_color = "#00C853"  # Green
+            text = "Actual"
 
-        if label=="Actual":
-
-            st.success(label)
-
-
-        elif label=="Edited":
-
-            st.warning(label)
-
-
+        elif label == "Edited":
+            bar_color = "#FF9800"  # Orange
+            text = "Edited"
         else:
+            bar_color = "#F44336"  # Red
+            text = "AI Generated"
 
-            st.error(label)
+       
+
+
+
+        # if label=="Actual":
+
+        #     st.success(label)
+
+
+        # elif label=="Edited":
+
+        #     st.warning(label)
+
+
+        # else:
+
+        #     st.error(label)
 
 
 
 
-        st.progress(
-            confidence
-        )
+        # st.progress(
+        #     confidence
+        # )
 
 
         st.write(
 
             f"Confidence : {confidence*100:.2f}%"
-
         )
 
 
-
+        st.markdown(
+                f"""
+                <div style="
+                    width:100%;
+                    background:#E0E0E0;
+                    height:25px;
+                    border-radius:15px;
+                ">
+                    <div style="
+                        width:{confidence_percentage}%;
+                        background:{bar_color};
+                        height:25px;
+                        border-radius:15px;
+                        text-align:center;
+                        color:white;
+                        font-weight:bold;
+                        line-height:25px;
+                    ">
+                        {confidence_percentage:.2f}%
+                    </div>
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
+        
 
 
 # =====================================================
@@ -517,7 +560,8 @@ elif menu=="Dataset Evaluation":
             display_df = df.drop(
                 columns=[
                    "Actual Class",
-                   "Result"
+                   "Result",
+                   "Image Path"
               ]
             )
 
